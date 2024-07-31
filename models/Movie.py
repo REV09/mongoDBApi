@@ -1,4 +1,4 @@
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel
 
 
 class Movie(BaseModel):
@@ -8,6 +8,3 @@ class Movie(BaseModel):
     genre: str
     rating: float
     year: int
-
-    class Config:
-        orm_mode = True
